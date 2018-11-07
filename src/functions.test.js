@@ -48,9 +48,11 @@ const sum = (numberOne, numberTwo) => {
  */
 
 const sumOfArray = array => {
-  return array.reduce(function(pleaseJustWork, number) {
-    return pleaseJustWork + number
-  }, 0)
+  let sum = 0
+  array.forEach(character => {
+    sum += character
+  })
+  return sum
 }
 
 // ...
